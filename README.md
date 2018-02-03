@@ -11,9 +11,9 @@ This is a [good read](https://courses.engr.illinois.edu/cs498dwh/fa2010/lectures
 Please see the following description of the accompanying functions-
 
 # Im_Stitching_Panorama( )
-This is the main function that will interface to the sub routines. You basically put your images in [Panorama](https://github.com/tashrifbillah/Image-Stitching-Project/tree/master/Panorama) folder in number of 3, 5, 7, 9 .... Then you pass the images to [stitching( )](https://github.com/tashrifbillah/Image-Stitching-Project/blob/master/stitching.m) from left to right. The program will save the stiched images (panorama) in the directory you are working in.
+This is the main function that will interface to the sub routines. You basically put your images in [Panorama](https://github.com/tashrifbillah/Image-Stitching-Project/tree/master/Panorama) folder in number of 3, 5, 7, 9 .... Then you pass the images to [stitching( )](https://github.com/tashrifbillah/Image-Stitching-Project/blob/master/stitching.m) from left to right. The program will save the stiched images (panorama) in the directory you are working in. Some sample images are provided for testing purpose.
 
-The following are the subroutines I have used for the project.
+The following are the subroutines I have written for the project.
 
 # find_homography( )
 
@@ -68,4 +68,6 @@ During homography computation, some x,y are negative. To circumvent this problem
 
 # sift_match( )
 This function will find the SIFT features between two similar looking images. Please see the function for credit to appropriate source. The above procedure is built upong finding SIFT match between two images. There is another folder [sift_lib](https://github.com/tashrifbillah/Image-Stitching-Project/tree/master/sift_lib) that you also need to use. The [sift_match](https://github.com/tashrifbillah/Image-Stitching-Project/blob/master/sift_match.m) function automatically interface with the [sift_lib](https://github.com/tashrifbillah/Image-Stitching-Project/tree/master/sift_lib) folder and you can get away without worrying about it.
+
+An OpenCV version of the above program will be uploaded shortly.
 
